@@ -16,3 +16,9 @@ vim.keymap.set("n", "<leader>bc", "<cmd>:bd<cr>") -- (buffer)
 vim.keymap.set("n", "<C-l>", "<cmd>tabnext<cr>")
 vim.keymap.set("n", "<C-h>", "<cmd>tabprev<cr>")
 vim.keymap.set("n", "<C-w>", "<cmd>tabclose<cr>")
+
+-- Mover la línea actual (o bloque visual) hacia arriba / abajo
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==")     -- Alt-j → línea hacia abajo
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==")     -- Alt-k → línea hacia arriba
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv") -- mismo en modo visual
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
