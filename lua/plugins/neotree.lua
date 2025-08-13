@@ -9,9 +9,9 @@ return {
         },
         event = "VeryLazy",
         config = function()
-            vim.keymap.set("n", "<leader>n", "<cmd>Neotree toggle reveal<cr>")
+            vim.keymap.set("n", "<leader>N", "<cmd>Neotree toggle reveal<cr>")
             vim.keymap.set("n", "<leader>ns", "<cmd>Neotree show toggle<cr>")
-            vim.keymap.set("n", "<leader>N", "<cmd>Neotree focus<cr>")
+            vim.keymap.set("n", "<leader>nf", "<cmd>Neotree focus<cr>")
         end
     }
 }
