@@ -9,13 +9,14 @@ vim.opt.softtabstop = 4
 
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.wrap = false
 
-vim.opt.undofile = true
+vim.opt.undofile = true      -- undo and redo after saving/exit and enter neovim
 
-vim.opt.termguicolors = true
-vim.opt.background = "dark"
+vim.opt.termguicolors = true -- Enable true color on themes
 
-vim.opt.mouse = "a"
+vim.opt.mouse = "a"          -- Enable mouse in all modes
 
-vim.g.editorconfig = true
+vim.g.editorconfig = true    -- Neovim accepts own indentation ruleso
+
+-- Moonfly transparency
+-- vim.g.moonflyTransparent = true
