@@ -21,6 +21,7 @@ return {
                 -- Get the language server to recognize the 'vim' global
                 globals = { "vim" },
             },
+            format = { enabled = true }
         },
     },
 }
